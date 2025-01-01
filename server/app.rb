@@ -6,7 +6,7 @@ App = lambda do |env|
   if Faye::WebSocket.websocket?(env)
     ws = Faye::WebSocket.new(env)
 
-    ws.on :open do |event|
+    ws.on :open do |_event|
       puts 'Client connected'
     end
 
