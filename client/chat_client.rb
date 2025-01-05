@@ -27,6 +27,7 @@ class ChatClient
       @ws.on :message do |event|
         data = JSON.parse(event.data)
         puts "[#{data['name']}] #{data['message']}"
+        print '> '
       end
 
       @ws.on :close do |event|
