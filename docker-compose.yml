@@ -1,0 +1,8 @@
+services:
+  websocket_app:
+    build: .
+    ports:
+      - "9292:9292"
+    volumes:
+      - .:/app
+    command: bundle exec rackup server/config.ru -s puma -E production -p 9292
