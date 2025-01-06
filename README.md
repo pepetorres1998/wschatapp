@@ -29,5 +29,8 @@ Run the client
 bundle exec ruby ./client/app.rb <name> <server_url>
 
 # For example:
-bundle exec ruby client/app.rb Antonio ws://localhost:9292
+bundle exec ruby ./client/app.rb Antonio ws://localhost:9292
+
+# To try out a live demo online
+bundle exec ruby ./client/app.rb <name> ws://172.203.64.105:9292
 ```

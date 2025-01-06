@@ -14,4 +14,4 @@ RUN bundle install
 EXPOSE 9292
 
 # Set the command to run your app
-CMD ["bundle", "exec", "rackup", "config.ru", "-s", "puma", "-E", "production", "-p", "9292"]
+CMD ["bundle", "exec", "rackup", "server/config.ru", "-s", "puma", "-E", "production", "-p", "9292"]
